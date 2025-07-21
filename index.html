@@ -13,9 +13,11 @@
     <title>Document</title>
     <style type="text/tailwindcss">
         @theme {
+            --color-dark1: #111111;
             --color-dark2: #414040;
             --color-dark3: #707070;
             --color-dark4: #A0A0A0;
+            --color-dark5: #CFCFCF;
             --color-dark6: #E7E7E7;
             --color-dark7: #F3F3F3;
             --color-btn-primary: #B68C5A;
@@ -79,7 +81,7 @@
                     majority have suffered alteration in some form, by injected humour.</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3">
-                <div class="flex flex-col items-center text-center px-14 py-16 border-[#E7E7E7] border-b border-r">
+                <div class="flex flex-col items-center text-center px-14 py-16 border-dark5 border-b border-r">
                     <img src="./images/business.png" alt="">
                     <div class="max-w-2xs my-8">
                         <h2 class="font-ebgeramond font-extrabold text-dark2 text-3xl">Business Law</h2>
@@ -89,7 +91,7 @@
                     <a href="#"><img src="./images/Frame.png" alt=""></a>
                 </div>
                 <div
-                    class="flex flex-col items-center text-center px-14 py-16 border-[#E7E7E7] border-b border-r bg-linear-to-t from-[rgba(243, 243, 243, 0)] to-[#F3F3F3]">
+                    class="flex flex-col items-center text-center px-14 py-16 border-dark5 border-b border-r bg-linear-to-t from-[rgba(243, 243, 243, 0)] to-[#F3F3F3]">
                     <img src="./images/criminal.png" alt="">
                     <div class="max-w-2xs my-8">
                         <h2 class="font-ebgeramond font-extrabold text-dark2 text-3xl">Criminal Law</h2>
@@ -98,7 +100,7 @@
                     </div>
                     <a href="#"><img src="./images/Frame.png" alt=""></a>
                 </div>
-                <div class="flex flex-col items-center text-center px-14 py-16 border-[#E7E7E7] border-b">
+                <div class="flex flex-col items-center text-center px-14 py-16 border-dark5 border-b">
                     <img src="./images/tax.png" alt="">
                     <div class="max-w-2xs my-8">
                         <h2 class="font-ebgeramond font-extrabold text-dark2 text-3xl">Tax Law</h2>
@@ -108,7 +110,7 @@
                     <a href="#"><img src="./images/Frame.png" alt=""></a>
                 </div>
                 <div
-                    class="flex flex-col items-center text-center px-14 py-16 border-[#E7E7E7] border-b lg:border-b-0 border-r">
+                    class="flex flex-col items-center text-center px-14 py-16 border-dark5 border-b lg:border-b-0 border-r">
                     <img src="./images/child.png" alt="">
                     <div class="max-w-2xs my-8">
                         <h2 class="font-ebgeramond font-extrabold text-dark2 text-3xl">Child Support</h2>
@@ -118,7 +120,7 @@
                     <a href="#"><img src="./images/Frame.png" alt=""></a>
                 </div>
                 <div
-                    class="flex flex-col items-center text-center px-14 py-16 border-[#E7E7E7] border-b lg:border-b-0 border-r">
+                    class="flex flex-col items-center text-center px-14 py-16 border-dark5 border-b lg:border-b-0 border-r">
                     <img src="./images/education.png" alt="">
                     <div class="max-w-2xs my-8">
                         <h2 class="font-ebgeramond font-extrabold text-dark2 text-3xl">Education Law</h2>
@@ -127,7 +129,7 @@
                     </div>
                     <a href="#"><img src="./images/Frame.png" alt=""></a>
                 </div>
-                <div class="flex flex-col items-center text-center px-14 py-16 border-[#E7E7E7] border-b lg:border-0">
+                <div class="flex flex-col items-center text-center px-14 py-16 border-dark5 border-b lg:border-0">
                     <img src="./images/divorce.png" alt="">
                     <div class="max-w-2xs my-8">
                         <h2 class="font-ebgeramond font-extrabold text-dark2 text-3xl">Divorce Law</h2>
@@ -174,13 +176,13 @@
 
 
         <!-- Frequently Asked Any Questions section -->
-        <section>
+        <section class="mb-32">
             <div class="text-center max-w-[700px] mx-auto">
                 <h2 class="font-ebgeramond text-4xl font-extrabold text-dark2">Frequently Asked Any Questions</h2>
                 <p class="text-dark3 mt-6 mb-16">There are many variations of passages of Lorem Ipsum available, but the
                     majority have suffered alteration in some form, by injected humour.</p>
             </div>
-            <div class="flex flex-col lg:max-w-7xl mx-auto items-center justify-between gap-8">
+            <div class="flex flex-col lg:flex-row max-w-7xl  mx-auto items-center justify-between gap-8">
                 <!-- questions -->
                 <div class="flex-1 ">
 
@@ -257,8 +259,75 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- contact us section -->
+        <section class="mb-32">
+            <!-- header -->
+            <div class="text-center max-w-[700px] mx-auto">
+                <h2 class="font-ebgeramond text-4xl font-extrabold text-dark2">Contact With Us</h2>
+                <p class="text-dark3 mt-6 mb-16">There are many variations of passages of Lorem Ipsum available, but the
+                    majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <!-- body -->
+            <div class="flex flex-col lg:flex-row max-w-7xl mx-auto items-center justify-between gap-8">
+                <div class="bg-dark7 grid grid-cols-2">
+                    <div class="flex justify-center items-center border-dark5 border-b border-r">
+                        <div class="px-14 py-16 flex flex-col items-center text-center">
+                            <img src="./images/location.png" alt="">
+                            <h4 class="my-4 font-ebgeramond font-extrabold text-2xl text-dark2">Address</h4>
+                            <p class="text-dark3">A108 Adam Street,<br>
+                                New York, NY 535022</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center border-dark5 border-b ">
+                        <div class="px-14 py-16 flex flex-col items-center text-center">
+                            <img src="./images/call.png" alt="">
+                            <h4 class="my-4 font-ebgeramond font-extrabold text-2xl text-dark2">Call Us</h4>
+                            <p class="text-dark3">+88 01750 00 00 00<br>
+                                +88 01750 00 00 00</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center border-dark5 border-r">
+                        <div class="px-14 py-16 flex flex-col items-center text-center">
+                            <img src="./images/email.png" alt="">
+                            <h4 class="my-4 font-ebgeramond font-extrabold text-2xl text-dark2">Email Us</h4>
+                            <p class="text-dark3">info@gmail.com<br>
+                                info@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center border-dark5 ">
+                        <div class="px-14 py-16 flex flex-col items-center text-center">
+                            <img src="./images/time.png" alt="">
+                            <h4 class="my-4 font-ebgeramond font-extrabold text-2xl text-dark2">Working Hours</h4>
+                            <p class="text-dark3">Mon-Fri: 9AM to 5PM<br>
+                                Sunday: 9AM to 1 PM</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex-1">
+                    <form action="" class="w-full flex flex-col gap-7">
+                        <input class="bg-dark7 p-6 border-0 rounded-lg" type="text" name="name" id="name"
+                            placeholder="Your Name">
+                        <input class="bg-dark7 p-6 border-0 rounded-lg" type="email" name="email" id="email"
+                            placeholder="Your Email">
+                        <input class="bg-dark7 p-6 border-0 rounded-lg" type="text" name="subject" id="subject"
+                            placeholder="Subject">
+                        <textarea class="bg-dark7 p-6 border-0 rounded-lg" name="message" id="message" rows="5"
+                            placeholder="Your Message"></textarea>
+                        <button
+                            class="py-5 px-8 bg-btn-primary border-0 rounded-lg text-white font-semibold text-xl cursor-pointer hover:bg-[#8a6a43] transition-colors duration-300">Send
+                            Message</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
     </main>
-    <footer>
+    <footer class="bg-dark1">
         <!-- footer section  -->
     </footer>
 
