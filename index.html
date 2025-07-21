@@ -27,8 +27,8 @@
     <script src="https://kit.fontawesome.com/1de8917a83.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-[#FFFFFF] font-poppins">
-    <header>
+<body class="font-poppins">
+    <header class="bg-[#FFFFFF] w-full">
         <!-- header section  -->
         <nav class="flex flex-col text-center gap-2.5 lg:flex-row max-w-7xl mx-auto items-center justify-between my-14">
             <img class="" src="./images/logo2.png" alt="">
@@ -56,7 +56,8 @@
         <div
             class="bg-[url(./images/banner.png)] bg-cover bg-no-repeat lg:max-w-7xl mx-auto h-160 flex items-center justify-center rounded-lg">
             <div class="px-2.5  flex flex-col items-center justify-center text-amber-50 max-w-2xl mx-auto text-center">
-                <h1 class="text-7xl font-extrabold font-ebgeramond">We Provide Effective Legal Solutions</h1>
+                <h1 class="text-5xl lg:text-7xl font-extrabold font-ebgeramond">We Provide Effective Legal Solutions
+                </h1>
                 <p class="text-lg my-6 text-dark6">There are many variations of passages of Lorem Ipsum available, but
                     the majority have suffered alteration in some form, by injected humour.</p>
                 <form action="" class="flex flex-col gap-5 lg:flex-row w-full">
@@ -70,7 +71,7 @@
 
         </section>
     </header>
-    <main>
+    <main class="bg-[#FFFFFF] w-full">
         <!-- main section  -->
 
         <!-- ligal prectices area section  -->
@@ -262,119 +263,123 @@
 
 
         <!-- contact us section -->
-        <section class="mb-32">
+        <section class="mb-32 overflow-hidden px-4">
             <!-- header -->
             <div class="text-center max-w-[700px] mx-auto">
                 <h2 class="font-ebgeramond text-4xl font-extrabold text-dark2">Contact With Us</h2>
-                <p class="text-dark3 mt-6 mb-16">There are many variations of passages of Lorem Ipsum available, but the
-                    majority have suffered alteration in some form, by injected humour.</p>
+                <p class="text-dark3 mt-6 mb-16">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour.
+                </p>
             </div>
+
             <!-- body -->
-            <div class="flex flex-col lg:flex-row max-w-7xl mx-auto items-center justify-between gap-8">
-                <div class="bg-dark7 grid grid-cols-2">
-                    <div class="flex justify-center items-center border-dark5 border-b border-r">
-                        <div class="px-14 py-16 flex flex-col items-center text-center">
+            <div class="flex flex-col lg:flex-row max-w-7xl mx-auto items-center justify-between gap-8 w-full">
+                <!-- contact grid -->
+                <div class="bg-dark7 grid grid-cols-1 sm:grid-cols-2 w-full">
+                    <div class="flex justify-center items-center border-dark5 border-b lg:border-r">
+                        <div class="px-6 md:px-14 py-16 flex flex-col items-center text-center">
                             <img src="./images/location.png" alt="">
                             <h4 class="my-4 font-ebgeramond font-extrabold text-2xl text-dark2">Address</h4>
-                            <p class="text-dark3">A108 Adam Street,<br>
-                                New York, NY 535022</p>
+                            <p class="text-dark3">A108 Adam Street,<br> New York, NY 535022</p>
                         </div>
                     </div>
-                    <div class="flex justify-center items-center border-dark5 border-b ">
-                        <div class="px-14 py-16 flex flex-col items-center text-center">
+                    <div class="flex justify-center items-center border-dark5 border-b">
+                        <div class="px-6 md:px-14 py-16 flex flex-col items-center text-center">
                             <img src="./images/call.png" alt="">
                             <h4 class="my-4 font-ebgeramond font-extrabold text-2xl text-dark2">Call Us</h4>
-                            <p class="text-dark3">+88 01750 00 00 00<br>
-                                +88 01750 00 00 00</p>
+                            <p class="text-dark3">+88 01750 00 00 00<br> +88 01750 00 00 00</p>
                         </div>
                     </div>
-                    <div class="flex justify-center items-center border-dark5 border-r">
-                        <div class="px-14 py-16 flex flex-col items-center text-center">
+                    <div class="flex justify-center items-center border-dark5 border-b lg:border-r">
+                        <div class="px-6 md:px-14 py-16 flex flex-col items-center text-center">
                             <img src="./images/email.png" alt="">
                             <h4 class="my-4 font-ebgeramond font-extrabold text-2xl text-dark2">Email Us</h4>
-                            <p class="text-dark3">info@gmail.com<br>
-                                info@gmail.com</p>
+                            <p class="text-dark3">info@gmail.com<br> info@gmail.com</p>
                         </div>
                     </div>
-                    <div class="flex justify-center items-center border-dark5 ">
-                        <div class="px-14 py-16 flex flex-col items-center text-center">
+                    <div class="flex justify-center items-center border-dark5 border-b lg:border-b-0">
+                        <div class="px-6 md:px-14 py-16 flex flex-col items-center text-center">
                             <img src="./images/time.png" alt="">
                             <h4 class="my-4 font-ebgeramond font-extrabold text-2xl text-dark2">Working Hours</h4>
-                            <p class="text-dark3">Mon-Fri: 9AM to 5PM<br>
-                                Sunday: 9AM to 1 PM</p>
+                            <p class="text-dark3">Mon-Fri: 9AM to 5PM<br> Sunday: 9AM to 1 PM</p>
                         </div>
                     </div>
-
                 </div>
-                <div class="flex-1">
-                    <form action="" class="w-full flex flex-col gap-7">
-                        <input class="bg-dark7 p-6 border-0 rounded-lg" type="text" name="name" id="name"
+
+                <!-- contact form -->
+                <div class="flex-1 w-full">
+                    <form action="" class="flex flex-col gap-7 w-full">
+                        <input class="bg-dark7 p-6 border-0 rounded-lg w-full" type="text" name="name"
                             placeholder="Your Name">
-                        <input class="bg-dark7 p-6 border-0 rounded-lg" type="email" name="email" id="email"
+                        <input class="bg-dark7 p-6 border-0 rounded-lg w-full" type="email" name="email"
                             placeholder="Your Email">
-                        <input class="bg-dark7 p-6 border-0 rounded-lg" type="text" name="subject" id="subject"
+                        <input class="bg-dark7 p-6 border-0 rounded-lg w-full" type="text" name="subject"
                             placeholder="Subject">
-                        <textarea class="bg-dark7 p-6 border-0 rounded-lg" name="message" id="message" rows="5"
+                        <textarea class="bg-dark7 p-6 border-0 rounded-lg w-full" name="message" rows="5"
                             placeholder="Your Message"></textarea>
                         <button
-                            class="py-5 px-8 bg-btn-primary border-0 rounded-lg text-white font-semibold text-xl cursor-pointer hover:bg-[#8a6a43] transition-colors duration-300">Send
-                            Message</button>
-
+                            class="py-5 px-8 bg-btn-primary border-0 rounded-lg text-white font-semibold text-xl cursor-pointer hover:bg-[#8a6a43] transition-colors duration-300 w-full">
+                            Send Message
+                        </button>
                     </form>
                 </div>
             </div>
         </section>
 
 
+
     </main>
-    <footer class="bg-dark1">
+    <footer class="bg-dark1 w-full">
         <!-- footer section  -->
-        <section class="max-w-7xl mx-auto flex justify-between py-28 gap-20 px-3 flex-col lg:flex-row">
-            <div class="flex-1">
+        <div class="max-w-7xl mx-auto px-3">
+            <section class="flex justify-between py-28 gap-20 flex-col lg:flex-row">
+                <div class="flex-1">
 
-                <img src="./images/logo.png" alt="">
+                    <img src="./images/logo.png" alt="">
 
-                <p class="text-dark5 pt-8">There are many variations of passages of Lorem Ipsum available, but the
-                    majority
-                    have
-                    suffered
-                    alteration
-                    in some form, by injected humour.</p>
-            </div>
-            <div class="flex-1">
-                <h4 class="text-white font-extrabold text-2xl font-ebgeramond">Usefull Link</h4>
-                <ul class="pt-12">
-                    <li class="text-dark5 mb-1.5"><a href="">Homes</a></li>
-                    <li class="text-dark5 mb-1.5"><a href="">About Us</a></li>
-                    <li class="text-dark5 mb-1.5"><a href="">Cases</a></li>
-                    <li class="text-dark5 mb-1.5"><a href="">Blog</a></li>
-                    <li class="text-dark5"><a href="">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="flex-1">
-                <h4 class="text-white font-extrabold text-2xl font-ebgeramond pb-12">Contact Now</h4>
-                <p class="text-dark5 mb-1.5">555 4th 5t NW, Washington<br>
-                    DC 20530, United States</p>
-                <p class="text-dark5 mb-1.5">+88 01750 000 000<br>
-                    +88 01750 000 000</p>
-                <p class="text-dark5">info@gmail.com<br>
-                    info@gmail.com</p>
-            </div>
-            <div class="flex-1">
-                <h4 class="text-white font-extrabold text-2xl font-ebgeramond">Subscribe</h4>
-                <p class="text-dark5 py-12">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
-                <form action="" class="flex">
-                    <input class="bg-white text-dark4 p-6 border-0 rounded-lg max-w-64" type="email" name="email"
-                        id="email" placeholder="Email Address">
-                    <button
-                        class="py-5 px-5 bg-btn-primary border-0 rounded-lg text-white font-semibold text-xl cursor-pointer hover:bg-[#8a6a43] transition-colors duration-300">
-                        <i class="fa-solid fa-paper-plane"></i>
-                    </button>
+                    <p class="text-dark5 pt-8">There are many variations of passages of Lorem Ipsum available, but the
+                        majority
+                        have
+                        suffered
+                        alteration
+                        in some form, by injected humour.</p>
+                </div>
+                <div class="flex-1">
+                    <h4 class="text-white font-extrabold text-2xl font-ebgeramond">Usefull Link</h4>
+                    <ul class="pt-12">
+                        <li class="text-dark5 mb-1.5"><a href="">Homes</a></li>
+                        <li class="text-dark5 mb-1.5"><a href="">About Us</a></li>
+                        <li class="text-dark5 mb-1.5"><a href="">Cases</a></li>
+                        <li class="text-dark5 mb-1.5"><a href="">Blog</a></li>
+                        <li class="text-dark5"><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <h4 class="text-white font-extrabold text-2xl font-ebgeramond pb-12">Contact Now</h4>
+                    <p class="text-dark5 mb-1.5">555 4th 5t NW, Washington<br>
+                        DC 20530, United States</p>
+                    <p class="text-dark5 mb-1.5">+88 01750 000 000<br>
+                        +88 01750 000 000</p>
+                    <p class="text-dark5">info@gmail.com<br>
+                        info@gmail.com</p>
+                </div>
+                <div class="flex-1">
+                    <h4 class="text-white font-extrabold text-2xl font-ebgeramond">Subscribe</h4>
+                    <p class="text-dark5 py-12">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+                    <form action="" class="flex">
+                        <input class="bg-white text-dark4 p-6 border-0 rounded-lg max-w-64" type="email" name="email"
+                            id="email" placeholder="Email Address">
+                        <button
+                            class="py-5 px-5 bg-btn-primary border-0 rounded-lg text-white font-semibold text-xl cursor-pointer hover:bg-[#8a6a43] transition-colors duration-300">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
 
-                </form>
+                    </form>
 
-            </div>
-        </section>
+                </div>
+            </section>
+        </div>
 
     </footer>
 
