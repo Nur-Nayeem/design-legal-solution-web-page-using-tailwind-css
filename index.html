@@ -30,10 +30,20 @@
 <body class="font-poppins">
     <header class="bg-[#FFFFFF] w-full">
         <!-- header section  -->
-        <nav class="flex flex-col text-center gap-2.5 lg:flex-row max-w-7xl mx-auto items-center justify-between my-14">
-            <img class="" src="./images/logo2.png" alt="">
+        <nav class="flex text-center gap-2.5 mx-5 lg:flex-row max-w-7xl lg:mx-auto items-center justify-between my-14">
+            <figure>
+                <img class="" src="./images/logo2.png" alt="">
+            </figure>
 
-            <ul class="lg:flex gap-8 text-dark3 text-lg">
+            <button class="block lg:hidden text-2xl menu-btn" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-items flex flex-col lg:flex-row gap-8 text-dark3 text-lg">
+                <li class="block lg:hidden">
+                    <button
+                        class="lg:block py-5 px-8 bg-btn-primary border-0 rounded-lg text-white font-semibold text-xl cursor-pointer hover:bg-[#8a6a43] transition-colors duration-300">Free
+                        Consultation</button>
+                </li>
                 <li class="list-item"><a href="#" class="list-links">Home</a></li>
                 <li class="list-item">
                     <a href="#" class="list-links">Services <i class="fa-solid fa-angle-right"></i></a>
@@ -48,13 +58,14 @@
                 <li class="list-item">
                     <a href="#" class="list-links">Contact US <i class="fa-solid fa-angle-right"></i></a>
                 </li>
+
             </ul>
             <button
-                class="py-5 px-8 bg-btn-primary border-0 rounded-lg text-white font-semibold text-xl cursor-pointer hover:bg-[#8a6a43] transition-colors duration-300">Free
+                class="hidden lg:block py-5 px-8 bg-btn-primary border-0 rounded-lg text-white font-semibold text-xl cursor-pointer hover:bg-[#8a6a43] transition-colors duration-300">Free
                 Consultation</button>
         </nav>
         <div
-            class="bg-[url(./images/banner.png)] bg-cover bg-no-repeat lg:max-w-7xl mx-auto h-160 flex items-center justify-center rounded-lg">
+            class="bg-[url(./images/banner.png)] bg-cover bg-no-repeat lg:max-w-7xl mx-5 lg:mx-auto h-160 flex items-center justify-center rounded-lg">
             <div class="px-2.5  flex flex-col items-center justify-center text-amber-50 max-w-2xl mx-auto text-center">
                 <h1 class="text-5xl lg:text-7xl font-extrabold font-ebgeramond">We Provide Effective Legal Solutions
                 </h1>
@@ -75,7 +86,7 @@
         <!-- main section  -->
 
         <!-- ligal prectices area section  -->
-        <section class="max-w-7xl mx-auto my-32">
+        <section class="max-w-7xl mx-5 lg:mx-auto my-32">
             <div class="text-center max-w-[700px] mx-auto">
                 <h2 class="font-ebgeramond text-4xl font-extrabold text-dark2">The Legal Practice Area</h2>
                 <p class="text-dark3 mt-6 mb-16">There are many variations of passages of Lorem Ipsum available, but the
@@ -147,13 +158,13 @@
 
         <!-- what our client says section  -->
         <section class="mb-32">
-            <div class="text-center max-w-[700px] mx-auto">
+            <div class="text-center max-w-[700px] mx-5 lg:mx-auto">
                 <h2 class="font-ebgeramond text-4xl font-extrabold text-dark2">What Our Client Say</h2>
                 <p class="text-dark3 mt-6 mb-16">There are many variations of passages of Lorem Ipsum available, but the
                     majority have suffered alteration in some form, by injected humour.</p>
             </div>
             <div
-                class="bg-[url(./images/banner.png)] h-160 bg-cover bg-no-repeat lg:max-w-7xl mx-auto flex items-center justify-around rounded-lg text-amber-50">
+                class="bg-[url(./images/banner.png)] h-160 bg-cover bg-no-repeat lg:max-w-7xl mx-5 lg:mx-auto flex items-center justify-around rounded-lg text-amber-50">
                 <a class="text-4xl" href="#"><i class="fa-solid fa-angle-left"></i></a>
                 <div class="max-w-4xl flex flex-col justify-between items-center text-center">
                     <img class="rounded-full w-24 my-7" src="./nur.jpg" alt="">
@@ -178,79 +189,78 @@
 
         <!-- Frequently Asked Any Questions section -->
         <section class="mb-32">
-            <div class="text-center max-w-[700px] mx-auto">
+            <div class="text-center max-w-[700px] mx-5 lg:mx-auto">
                 <h2 class="font-ebgeramond text-4xl font-extrabold text-dark2">Frequently Asked Any Questions</h2>
                 <p class="text-dark3 mt-6 mb-16">There are many variations of passages of Lorem Ipsum available, but the
                     majority have suffered alteration in some form, by injected humour.</p>
             </div>
-            <div class="flex flex-col lg:flex-row max-w-7xl  mx-auto items-center justify-between gap-8">
+            <div class="flex flex-col lg:flex-row max-w-7xl mx-5 lg:mx-auto items-center justify-between gap-8">
                 <!-- questions -->
                 <div class="flex-1 ">
 
-                    <div class="bg-dark7 border-0 rounded-lg p-8 mb-7">
+                    <div class="qn-container bg-dark7 border-0 rounded-lg p-8 mb-7">
                         <input type="checkbox" id="qn1" class="peer hidden" />
                         <div class="flex justify-between px-1 font-extrabold text-2xl font-ebgeramond">
                             <h3>1. Are application fee waivers available?</h3>
-                            <label for="qn1" class="cursor-pointer">
-                                <input type="checkbox" id="qn" class="peer2 hidden" />
-                                <label for="qn" class="cursor-pointer">
-                                </label>
-
-                                <span class="block peer2-checked:hidden">
-                                    <i class="fa-solid fa-plus"></i>
-                                </span>
-                                <span class="hidden peer2-checked:block">
-                                    <i class="fa-solid fa-minus"></i>
-                                </span>
-                            </label>
+                            <button class="block plus-icon cursor-pointer">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
                         </div>
 
-                        <p class="mt-4 text-dark3 hidden peer-checked:block">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour.
-                        </p>
+                        <div class="mt-2 qn-details hidden">
+                            <p class="text-dark3">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour.
+                            </p>
+                        </div>
                     </div>
-                    <div class="bg-dark7 border-0 rounded-lg p-8 mb-7">
-                        <input type="checkbox" id="qn2" class="peer hidden" />
+                    <div class="qn-container bg-dark7 border-0 rounded-lg p-8 mb-7">
+                        <input type="checkbox" id="qn1" class="peer hidden" />
                         <div class="flex justify-between px-1 font-extrabold text-2xl font-ebgeramond">
                             <h3>1. Are application fee waivers available?</h3>
-                            <label for="qn2" class="cursor-pointer">
+                            <button class="block plus-icon cursor-pointer">
                                 <i class="fa-solid fa-plus"></i>
-                            </label>
+                            </button>
                         </div>
 
-                        <p class="mt-4 text-dark3 hidden peer-checked:block">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour.
-                        </p>
+                        <div class="mt-2 qn-details hidden">
+                            <p class="text-dark3">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour.
+                            </p>
+                        </div>
                     </div>
-                    <div class="bg-dark7 border-0 rounded-lg p-8 mb-7">
-                        <input type="checkbox" id="qn3" class="peer hidden" />
+                    <div class="qn-container bg-dark7 border-0 rounded-lg p-8 mb-7">
+                        <input type="checkbox" id="qn1" class="peer hidden" />
                         <div class="flex justify-between px-1 font-extrabold text-2xl font-ebgeramond">
                             <h3>1. Are application fee waivers available?</h3>
-                            <label for="qn3" class="cursor-pointer">
+                            <button class="block plus-icon cursor-pointer">
                                 <i class="fa-solid fa-plus"></i>
-                            </label>
+                            </button>
                         </div>
 
-                        <p class="mt-4 text-dark3 hidden peer-checked:block">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour.
-                        </p>
+                        <div class="mt-2 qn-details hidden">
+                            <p class="text-dark3">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour.
+                            </p>
+                        </div>
                     </div>
-                    <div class="bg-dark7 border-0 rounded-lg p-8">
-                        <input type="checkbox" id="qn4" class="peer hidden" />
+                    <div class="qn-container bg-dark7 border-0 rounded-lg p-8 mb-7">
+                        <input type="checkbox" id="qn1" class="peer hidden" />
                         <div class="flex justify-between px-1 font-extrabold text-2xl font-ebgeramond">
                             <h3>1. Are application fee waivers available?</h3>
-                            <label for="qn4" class="cursor-pointer">
+                            <button class="block plus-icon cursor-pointer">
                                 <i class="fa-solid fa-plus"></i>
-                            </label>
+                            </button>
                         </div>
 
-                        <p class="mt-4 text-dark3 hidden peer-checked:block">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour.
-                        </p>
+                        <div class="mt-2 qn-details hidden">
+                            <p class="text-dark3">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -265,7 +275,7 @@
         <!-- contact us section -->
         <section class="mb-32 overflow-hidden px-4">
             <!-- header -->
-            <div class="text-center max-w-[700px] mx-auto">
+            <div class="text-center max-w-[700px] mx-5 lg:mx-auto">
                 <h2 class="font-ebgeramond text-4xl font-extrabold text-dark2">Contact With Us</h2>
                 <p class="text-dark3 mt-6 mb-16">
                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered
@@ -274,7 +284,7 @@
             </div>
 
             <!-- body -->
-            <div class="flex flex-col lg:flex-row max-w-7xl mx-auto items-center justify-between gap-8 w-full">
+            <div class="flex flex-col lg:flex-row max-w-7xl lg:mx-auto items-center justify-between gap-8 w-full">
                 <!-- contact grid -->
 
                 <div class="bg-dark7 grid grid-cols-1 sm:grid-cols-2">
@@ -335,7 +345,7 @@
     </main>
     <footer class="bg-dark1 w-full">
         <!-- footer section  -->
-        <div class="max-w-7xl mx-auto px-3">
+        <div class="max-w-7xl mx-5 lg:mx-auto px-3">
             <section class="flex justify-between py-28 gap-20 flex-col lg:flex-row">
                 <div class="flex-1">
 
@@ -385,6 +395,8 @@
         </div>
 
     </footer>
+
+    <script src="./script.js"></script>
 
 </body>
 
